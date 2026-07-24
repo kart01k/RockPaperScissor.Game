@@ -1,0 +1,174 @@
+body{
+    background-color: black;
+    font-family: 'coda';
+}
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.Rock-button,
+.Paper-button,
+.Scissor-button{
+    height: 120px;
+    width: 120px;
+    border-radius: 190px;
+    background-color: black;
+    border-style: solid;
+    border-color: wheat;
+    border-width: 4px;
+    font-size: 70px;
+    cursor: pointer;
+}
+.button-container{
+    display: flex;
+    column-gap: 10px;
+}
+ .result{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.scores{
+    font-size: 24px;
+    color: white;
+    padding: 0px;
+}
+.gameContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+}
+.userMove{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+}
+.user-move{
+    border-radius: 210px;
+    background-color: black;
+    border-style: solid;
+    border-color: wheat;
+    border-width: 4px;
+    font-size: 110px;
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.computerMove{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+.computer-move{
+    border-radius: 210px;
+    background-color: black;
+    border-style: solid;
+    border-color: wheat;
+    border-width: 4px;
+    font-size: 110px;
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.finalResult{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.resetButton{
+    width: 180px;
+    height: 50px;
+    font-size: 25px;
+    border-color: wheat;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.resetButton-container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    header{
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .button-container{
+        flex-direction: column;
+        row-gap: 12px;
+        column-gap: 0;
+        align-items: center;
+    }
+
+    .Rock-button,
+    .Paper-button,
+    .Scissor-button{
+        width: 90px;
+        height: 90px;
+        font-size: 42px;
+    }
+
+    .result{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .scores{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .gameContainer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .userMove,
+    .computerMove{
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .user-move,
+    .computer-move{
+        font-size: 70px;
+        padding: 12px 8px;
+    }
+
+    .finalResult{
+        font-size: 26px;
+        padding: 0 10px;
+    }
+
+    .resetButton{
+        width: 160px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
